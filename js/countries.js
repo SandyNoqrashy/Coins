@@ -150,7 +150,7 @@ const COUNTRY_NAMES = {
   ZAR: "South African Rand",
   ZMW: "Zambian Kwacha",
 };
-const country_Flag = {
+const country_Flags= {
   AED: "AE",
   AFN: "AF",
   XCD: "AG",
