@@ -38,8 +38,8 @@ btnConvert.addEventListener("click", () => {
 });
 
 function Flags() {
-  let countryTop =country_Flag[selectTop.value];
-  let countryBtm =country_Flag[selectBtm.value];
+  let countryTop =country_Flags[selectTop.value];
+  let countryBtm =country_Flags[selectBtm.value];
   imgTop.src = `https://flagsapi.com/${countryTop}/shiny/32.png`;
   imgBtm.src = `https://flagsapi.com/${countryBtm}/shiny/32.png`;
 }
