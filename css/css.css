@@ -1,0 +1,32 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Comic Neue", cursive;
+}
+
+.background {
+  background: linear-gradient(to right, #000000 40%, #3d3b3b 70%, #a9b9b9 100%);
+}
+.myinput::placeholder {
+  color: white;
+}
+.position-relative {
+  display: flex;
+  align-items: center;
+}
+.image {
+  position: absolute;
+  left: 0.9em;
+}
+.selecttop {
+  padding-left: 2.5em;
+}
+.selectbtm {
+  padding-left: 2.5em;
+}
+select option {
+  background: black;
+}
+
+
