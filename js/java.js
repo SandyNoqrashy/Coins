@@ -16,14 +16,23 @@ selectBtm.innerHTML = options;
 
 function Switch() {
   let amount = input.value;
+ if (isNaN(amount) && amount !== "") {
+    h1.innerHTML = "Please enter a number, not text!";
+    return
+  }
+
   if (amount == "") {
     amount = 1;}
   fetch(`https://v6.exchangerate-api.com/v6/9797b48fa097d9062473913a/latest/${selectTop.value}`)
     .then((res) => res.json())
     .then((data) => {
       let result = data.conversion_rates[selectBtm.value] * amount;
-      h1.innerHTML = `${amount} ${selectTop.value} = ${result.toFixed(3)} ${selectBtm.value}`;
-     });
+      h1.innerHTML = `${amount} ${selectTop.value} = ${result.toString().slice(0,6)} ${selectBtm.value}`;
+     })
+     .catch((e) => {
+        h1.innerHTML =  `The Server is Down`;
+        
+      });
 }
 icon.addEventListener("click", () => {
   let swap = selectTop.value;
