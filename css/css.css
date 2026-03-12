@@ -2,7 +2,7 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-   font-family: "Comic Neue", cursive;
+  font-family: 'Times New Roman', Times, serif;
 }
 .background {
   background: linear-gradient(to right, #000000 40%, #3d3b3b 70%, #a9b9b9 100%);
